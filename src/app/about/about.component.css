@@ -1,0 +1,29 @@
+.home {
+    background-color: #1abc9c;
+    padding-top: 104px;
+    height: 97vh;
+    color: #fff;
+    h2 {
+        font-weight: 700;
+        font-size: 40px;
+        margin: 15px 0 ;
+    }
+
+    .lines {
+        .line {
+            background-color: #fff;
+            width: 80px;
+            height: 4.5px;
+        }
+        margin-bottom: 16px;
+    }
+    .row{
+        width: 88%;
+    }
+    
+}
+@media (max-width: 900px) {
+    .home h2 {
+        font-size: 30px;
+    }
+}

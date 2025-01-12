@@ -1,0 +1,13 @@
+.home {
+    background-color: #fff;
+    padding-top: 104px;
+    height: 70vh;
+    color: rgb(217, 30, 30);
+    h1 {
+        font-weight: 700;
+        font-size: 40px;
+        margin: 15px 0 ;
+    }
+
+    
+}

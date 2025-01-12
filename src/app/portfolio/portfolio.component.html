@@ -1,0 +1,33 @@
+<div #el class="light-box d-none">
+  <div class="box">
+    <img #imgBox [src]="" alt="House of Wood">
+    <i (click)="close(el)" class="fa-regular fa-circle-xmark"></i>
+  </div>
+</div>
+<div class="home d-flex justify-content-center align-items-center flex-column">
+  <h2>PORTFOLIO COMPONENT</h2>
+  <div class="lines d-flex justify-content-center align-items-center">
+    <div class="line"></div>
+    <i class="fa-solid fa-star mx-3"></i>
+    <div class="line"></div>
+  </div>
+  <div class="container">
+    <div class="row mb-4 g-5">
+   @for(img of imgList;track $index){
+    <div class="col-lg-4 col-md-6">
+      <div (click)="display(img,imgBox,el)" class="item">
+        <img [src]="img" alt="house of wood" class="w-100 rounded-3" />
+        <div
+          class="layer rounded-3 d-flex justify-content-center align-items-center"
+        >
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+    </div>
+   }
+    </div>
+  </div>
+  
+</div>
+
+ 
